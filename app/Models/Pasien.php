@@ -15,10 +15,14 @@ class Pasien extends Model
         'nama',
         'alamat',
         'no_telp',
-        'email',
-        'umur',
+        'tanggal_lahir',
         'jenis_kelamin',
         'gol_darah',
         'riwayat_penyakit',
     ];
+
+    public function dokumentasi()
+    {
+        return $this->hasMany(Dokumentasi::class);
+    }
 }

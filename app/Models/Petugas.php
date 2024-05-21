@@ -19,4 +19,14 @@ class Petugas extends Model
         'nip',
     ];
 
+    public function ambulans()
+    {
+        return $this->hasMany(Ambulans::class);
+    }
+
+    public function dokumentasi()
+    {
+        return $this->hasMany(Dokumentasi::class);
+    }
+
 }

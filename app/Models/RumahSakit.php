@@ -17,4 +17,24 @@ class RumahSakit extends Model
         'no_telp',
         'email',
     ];
+
+    public function ambulans()
+    {
+        return $this->hasMany(Ambulans::class);
+    }
+
+    public function petugas()
+    {
+        return $this->hasMany(Petugas::class);
+    }
+
+    // public function pasien()
+    // {
+    //     return $this->hasMany(Pasien::class);
+    // }
+
+    // public function dokumentasi()
+    // {
+    //     return $this->hasMany(Dokumentasi::class);
+    // }
 }
